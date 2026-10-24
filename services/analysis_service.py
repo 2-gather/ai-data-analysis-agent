@@ -29,7 +29,7 @@ def run_analysis(df, question):
     # 关闭 AI 时，禁止进入 Agent 工作流
     if not is_ai_enabled():
         raise RuntimeError(
-            "当前 Demo 处于展示模式，AI 分析功能暂未开放。"
+            "当前 Demo 处于展示模式，请联系管理员开放AI分析功能。"
         )
 
     # 整理数据概况，提供给 Agent 理解数据结构
